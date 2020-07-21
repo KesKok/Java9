@@ -1,0 +1,42 @@
+class Bitwise
+{
+    public static void main(String[] args) {
+        int a=10, b = 15 , ans;
+        long c=10, d = 15 , ans1;
+        char e='Z', f = 'X', ans2;
+        float g=10f, h = 15f, ans3;
+        double i=10, j = 15, ans4;
+
+        ans = a & b;
+        System.out.println(ans);
+        ans = a | b;
+        System.out.println(ans);
+        ans = a ^ b;
+        System.out.println(ans);
+
+        ans1 = c & d;
+        System.out.println(ans1);
+        ans1 = c | d;
+        System.out.println(ans1);
+        ans1 = c ^ d;
+        System.out.println(ans1);
+
+        ans1 = e & f;
+        System.out.println(ans1); // ans2 cannot in Char type 
+        ans1 = e | f;
+        System.out.println(ans1); // ans type only can be int or long 
+        ans1 = e ^ f;
+        System.out.println(ans1);
+/*
+        ans3 = i & j;
+        System.out.println(ans1);
+        ans1 = g | h;
+        System.out.println(ans1);   it cannot be applied for float and double
+        ans1 = g ^ h;
+        System.out.println(ans1);
+*/
+    }
+
+
+
+}
