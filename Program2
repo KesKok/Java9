@@ -1,0 +1,42 @@
+class Operations
+{
+    int num1=10;
+    int num2= 5;
+    int ans;
+
+    void addition()
+    {
+        ans = num1 + num2;
+        System.out.println("Addition = "+ans);
+    }
+    void subtraction()
+    {
+        ans = num1 - num2;
+        System.out.println("Subtraction = "+ans);
+    }
+    void multiplication()
+    {
+        ans = num1 * num2;
+        System.out.println("Multiplication = "+ans);
+    }
+    void division()
+    {
+        ans = num1 / num2;
+        System.out.println("Division = "+ans);
+    }
+    void  modulus()
+    {
+        ans = num1 % num2;
+        System.out.println(" Modulus = "+ans);
+    }
+
+    public static void main(String[] args) {
+        Operations obj = new Operations();
+        obj.addition();
+        obj.division();
+        obj.modulus();
+        obj.multiplication();
+        obj.subtraction();
+
+    }
+}

@@ -1,0 +1,41 @@
+class Program
+{
+
+    void program3()
+    {
+        int a=10;
+        int b=20;
+        int c=50;
+        int ans;
+
+        ans = a++ + ++b + ++c;
+        System.out.println("Program3 " + ans);     //82
+    }
+
+    void program4()
+    {
+        int x=10;   //x = a as per program 4 from operators1
+        int y=20;   //y = b as per program 4 from operators1
+        int z=50;   //z = c as per program 4 from operators1
+        int ans;
+        ans = --x + ++y + z--;
+        System.out.println("Program4 " + ans);   // 80
+    }
+
+    void program5()
+    {
+        int p=10;    //p = a  as per program 5 from operators1
+        int q=20;    //q = b  as per program 5 from operators1
+        int r=50;    //r = c  as per program 5 from operators1
+        int ans;
+        ans = p++ + --q + r--;
+        System.out.println("Program5 " + ans);    // 79
+    }
+
+    public static void main(String[] args) {
+        Program obj = new Program();
+        obj.program3();
+        obj.program4();
+        obj.program5();
+    }
+}
